@@ -1,0 +1,30 @@
+.editor-button:hover {
+  color: darkorange;
+  transform: scale(1.3);
+}
+
+.PreviewHeader, 
+.EditorHeader {
+  justify-content: space-between;
+}
+
+ .Wrapper {
+   display: flex;
+   background-color: lightgrey;
+ }
+
+ .EditorSpacer {
+  padding-left: 5rem;
+ }
+
+ .EditorHeader {
+  border-right: 1px solid whitesmoke;
+ }
+
+.editor-button {
+  padding-right: 1rem;
+}
+
+.editor-icon {
+  padding-right: 1rem;
+}

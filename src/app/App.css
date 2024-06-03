@@ -6,19 +6,25 @@
 .PreviewHeader, 
 .EditorHeader {
   justify-content: space-between;
+  transition: 'color 0.3s ease-in-out, scale 0.3s ease-in-out';
 }
 
- .Wrapper {
-   display: flex;
-   background-color: lightgrey;
- }
+.PreviewHeader {
+  border-left: 5px solid darkslategrey;
+}
+
+.EditorHeader {
+  border-right: 5px solid darkslategrey;
+}
+
+
+.Wrapper {
+  display: flex;
+  background-color: slategrey;
+}
 
  .EditorSpacer {
-  padding-left: 5rem;
- }
-
- .EditorHeader {
-  border-right: 1px solid whitesmoke;
+  padding-left: 3rem;
  }
 
 .editor-button {
@@ -26,5 +32,79 @@
 }
 
 .editor-icon {
-  padding-right: 1rem;
+  padding-right: 0.35rem;
+}
+
+.preview {
+  height: 100vh;
+}
+
+.preview img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.preview table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.preview th, .preview td {
+  border: 2px solid darkslategrey;
+  padding: 8px;
+}
+
+.preview th {
+  background-color: darkcyan;
+  color: #fff;
+  text-align: left;
+}
+
+.preview tr:nth-child(even) {
+  background-color: lightslategray;
+}
+
+.preview tr:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.preview code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7f7f7;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.preview pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+}
+
+.EditorHeader {
+  background-color: slategray;
+}
+
+.Wrapper {
+  background-color: slategray;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: darkslategrey;
 }

@@ -1,10 +1,10 @@
+import { Margin } from '@mui/icons-material';
 import MuiAppBar from '@mui/material/AppBar';
 import { styled } from '@mui/material/styles';
 
 const drawerWidth = '50vw';
-const decorativeBorder = '5px solid lightslategrey';
+const decorativeBorder = '5px solid slategrey';
 const textBackgroundColor = 'lightsteelblue';
-const textContainerHeight = '1000vh';
 const textContainerPadding = '1rem';
 
 export const mockMarkdown = `Welcome to my React Markdown Previewer!
@@ -45,28 +45,24 @@ export const drawerStyle = {
 export const previewStyle = {
   borderLeft: decorativeBorder,
   backgroundColor: textBackgroundColor,
-  height: textContainerHeight,
+  height: "100vh",
   padding: textContainerPadding,
+  overflowY: "auto",
 }
 
 export const editorStyle = {
   borderRight: decorativeBorder,
   backgroundColor: textBackgroundColor,
-  height: textContainerHeight,
+  height: "100vh",
   padding: textContainerPadding,
-}
-
-export const textStyle = {
-  borderRight: decorativeBorder,
-  backgroundColor: textBackgroundColor,
-  height: textContainerHeight,
-  padding: textContainerPadding,
+  overflowY: "auto",
+  wordWrap: "break-word",
 }
 
 export const appBarStyle = {
   backgroundColor: 'darkcyan', 
   height: '4rem',
-  width: "50vw", 
+  width: "100%", 
   left: 0, 
 }
 
@@ -118,6 +114,7 @@ export const Previewer = styled('main', { shouldForwardProp: (prop) => prop !== 
         duration: 300,
       }),
       marginLeft: 0,
+      display: 'grid',
     }),
   }),
 );

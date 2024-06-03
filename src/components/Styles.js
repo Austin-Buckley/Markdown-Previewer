@@ -17,7 +17,10 @@ Heres some code, \`<div></div>\`, between 2 backticks.
 \`\`\`
 // this is multi-line code:
 
+let hello = true;
+
 function helloWorld() {
+  if (hello) {
   console.log('Hello, World!');
   }
 }

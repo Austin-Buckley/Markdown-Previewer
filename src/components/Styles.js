@@ -21,7 +21,7 @@ let hello = true;
 
 function helloWorld() {
   if (hello) {
-  console.log('Hello, World!');
+    console.log('Hello, World!');
   }
 }
 \`\`\`

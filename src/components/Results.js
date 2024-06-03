@@ -1,16 +1,14 @@
-import 'prismjs/themes/prism.css'; // Import Prism.css for styling
+import 'prismjs/themes/prism.css'; // Import Prism.css for code styling
 
 import * as React from 'react';
 
 import {
   DrawerHeader,
   Previewer,
-  mockMarkdown,
   previewStyle
 } from './Styles';
 
 import Prism from 'prismjs';
-import TextField from '@mui/material/TextField';
 import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 import { useEffect } from 'react';
 

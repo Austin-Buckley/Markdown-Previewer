@@ -9,23 +9,18 @@ import {
 } from './Styles'
 
 import Button from '@mui/material/Button';
-import { Divider } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TextField from '@mui/material/TextField';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
 export default function Editor(props) {
   const handleTextChange = (event) => {
     props.onContentChange(event.target.value);
   }
-  const getMarkdownText = () => {
-    const rawMarkup = marked.parse(props.content);
-    return { __html: rawMarkup };
-  }
+  
   return (
     <Drawer sx={drawerStyle} open={props.open}
       variant="persistent" anchor="left" 
@@ -46,7 +41,6 @@ export default function Editor(props) {
         </Toolbar>
       </AppBar>
       </DrawerHeader>
-      {/* <Divider flexItem variant="middle" sx={{backgroundColor: "slategrey", width: "50%",}} >Markdown</Divider> */}
       <TextField
         className="Markdown" id="editor"
         multiline fullWidth variant="outlined"
@@ -56,19 +50,6 @@ export default function Editor(props) {
         onKeyUp={handleTextChange}
         
         />
-      {/* Causes a resizing error */}
-      {/* <Divider sx={{backgroundColor: "slategrey"}} flexItem variant="middle" >HTML</Divider> */}
-      {/* <TextField
-        className="Markdown"
-        multiline
-        fullWidth
-        variant="outlined"
-        sx={editorStyle}
-        color="warning"
-        value={marked.parse(props.content)}
-        onChange={handleTextChange}
-        onKeyUp={handleTextChange}
-      /> */}
     </Drawer>
   );
 };

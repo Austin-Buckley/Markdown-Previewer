@@ -36,10 +36,10 @@ There's also [links](https://www.freecodecamp.org), and
 
 And if you want to get really crazy, even tables:
 
-| Wild Header | Crazy Header | Another Header? |
-|------------ | ------------- | ------------- |
-| Your content can | be here, and it | can be here.... |
-| And here. | Okay. | I think we get it. |
+| Charmander | Charmeleon |Charizard | Mega Charizard X/Y |
+|------------ | ------------- | ------------- | ------------- | 
+| First Evolution | Second Evolution | Final Evolution | Mega Evolution |
+| ![charmander](https://shorturl.at/tiYyG) | ![charmeleon](https://shorturl.at/1QQrG) | ![charizard](https://shorturl.at/OqJJD) | ![mega charizard x](https://shorturl.at/GXOll) ![mega charizard y](https://shorturl.at/NqoTR)
 
 - And of course there are lists.
   - Some are bulleted.
